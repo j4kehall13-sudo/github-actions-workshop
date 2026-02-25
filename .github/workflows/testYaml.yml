@@ -1,0 +1,14 @@
+name: Task 4
+
+on: 
+  issues:
+    types: [opened]
+
+jobs:
+  print-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Display issue"
+        run: |
+          echo "New issue has been opened! - Tassk 4 completed"
+          echo "The issue was titled: ${{ github.event.issue.title }}"
