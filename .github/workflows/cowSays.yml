@@ -1,5 +1,5 @@
 on:
-  push
+  workflow_dispatch
 
 name: Cowsays
 
@@ -13,17 +13,6 @@ jobs:
       with:
         text: 'ship ship ship!'
         color: 'red'
-on:
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        run: |
-          SECRET_MESSAGE="It works"!!!"
           
 
 
